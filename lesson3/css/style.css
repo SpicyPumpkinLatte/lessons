@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    color: crimson;
+}
+
+.header__text-green {
+    color: forestgreen;
+}
+
+.header__text h3 {
+    color: maroon;
+}
+
+.link.red {
+    color: red;
+}
+
+.first__text span {
+    color: blueviolet;
+}
+
+.fourth ~ p {
+    color: darkmagenta;
+} 
+
+.fifth > p {
+    color: darkblue;
+}
+
+.list span {
+    color: blue;
+}
+
+.footer > p {
+    color: firebrick;
+}
