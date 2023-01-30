@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('../fonts/CormorantInfant-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/CormorantInfant-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('../fonts/CormorantInfant-Bold.woff2') format('woff2'),
+        url('../fonts/CormorantInfant-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap');
+
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 28px;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Infant', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 2;
+}
+
+h3 {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 32px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+}
+
+p, ol {
+    text-indent: 36px;
+    word-spacing: 10px;
+}
+
+.header__text-mark {
+    color: #f52727;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+ul, ol {
+    text-shadow: 1px 1px 8px #fabe28;
+}
+
+ul {
+    text-align: center;
+}
+
+.mark > span {
+    color: brown;
+}
+
+.main__mark {
+    color: #f527a3 !important;
+    text-decoration: underline;
+}
+
+.footer {
+    font-family: 'Cormorant Infant', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2;
+    text-align: right;
+}
+
+.link {
+    font-size: 36px;
+    color: rgba(245, 39, 163, 0.54);
+}
+
+
+
