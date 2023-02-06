@@ -1,4 +1,4 @@
-.article {
+body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 30px auto;
@@ -18,6 +18,10 @@ h1 {
 
 p {
     margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
 }
 
 .img-container {
