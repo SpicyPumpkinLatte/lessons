@@ -23,7 +23,8 @@ p {
 .img-container {
     margin: 0 auto;
     margin-bottom: 80px;
-    max-width: 1250px;
+    max-width: 1240px;
+    font-size: 0;
 }
 
 .img__margin {
