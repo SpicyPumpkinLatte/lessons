@@ -57,14 +57,11 @@ main {
     font-weight: 400;
 }
 
-.list__content {
+.list {
     color: #637381;
     font-size: 16px;
     line-height: 1;
     font-weight: 700;
-}
-
-.list {
     margin-bottom: 60px;
     max-width: 309px;
     width: 100%;
@@ -103,8 +100,7 @@ main {
 
 .footer {
     font-family: 'Inter', sans-serif;
-    background-color: #F4F7FF;
-    background: url(../img/2.png) 100% center no-repeat, url(../img/3.png) 100% center no-repeat;
+    background:  url(../img/2.png) 100% center no-repeat, url(../img/3.png) 100% center no-repeat, #F4F7FF;
 }
 
 .footer__container {
