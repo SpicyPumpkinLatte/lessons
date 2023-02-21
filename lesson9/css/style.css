@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
+body {
+    background: url(../img/1642237733_65-damion-club-p-sovremennii-fon-dlya-prezentatsii-66.jpg) repeat;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    color: #406f7d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c8ecf7;
+    border: 2px solid #0d84a8;
+    border-radius: 50px;
+    margin: 40px auto;
+    padding: 30px 15px;
+    max-width: 1470px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header__group {
+    max-width: 1000px;
+    width: 100%;
+    padding: 15px;
+    background-color: #aad8e5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(0.9);
+}
+
+.header__group:nth-child(odd) {
+    background-color: #4bacc9;
+}
+
+.header__group:last-child {
+    background-color: #0d84a8;
+    max-width: 1200px;
+}
+
+.header__group:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list__item {
+    padding: 30px;
+    width: 1000px;
+    background-color: #aad8e5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list__item div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.list__item-group1 div {
+    background-color: #4bacc9;
+    width: 100px;
+    height: 100px;
+}
+
+.list__item-group2 div {
+    width: 1000px;
+    height: 400px;
+}
+
+.list__item-group3 div {
+    width: 300px;
+    height: 400px;
+}
+
+.list__item-group4 div {
+    width: 900px;
+    height: 200px;
+    background-color: #1234A6;
+}
+
+.list__item-bg1{
+    background-image: url(../img/client-bg.svg);
+}
+
+.list__item-bg2 {
+    background-image: url(../img/client-bg1.svg);
+}
+
+.list__item-bg3 {
+    background-image: url(../img/client-bg2.svg);
+}
+
+.list__item-bg4 {
+    background-image: url(../img/dotted-bg.svg);
+}
+
+.list__item-bg5 {
+    background-image: url(../img/hero.webp);
+}
+
+.list__item-bg6  {
+    background-image: url(../img/pricing-bg1.webp);
+}
+
+.list__item-bg7  {
+    background-image: url(../img/pricing-bg2.webp);
+}
+
+.list__item-bg8  {
+    background-image: url(../img/pricing-bg3.webp);
+}
+
+.list__item-bg9  {
+    background-image: url(../img/cta-bg.webp);
+}
+
+
+
+.footer__list-item {
+    max-width: 1200px;
+    margin-bottom: 30px;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #aad8e5;
+    border-radius: 50px;
+}
+
+.footer__list-item:nth-child(even) {
+    background-color: #4bacc9;
+}
+
+.footer__list-item2 img:not(:nth-child(n + 4)) {
+    margin-bottom: 20px;
+}
+
