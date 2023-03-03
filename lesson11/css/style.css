@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.header__container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    z-index: 1;
+    align-items: center;
+    color: #212B36;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.flex-item {
+    display: flex;
+}
+
+.header__logo {
+    padding: 30px 0;
+    margin-right: 45px;
+}
+
+.header__btn {
+    position: relative;
+    margin-right: 45px;
+    background-color: #F4F7FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__btn:hover .sub-menu--display {
+    opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
+.header__btn:hover {
+    color: #3056D3;
+}
+
+.header__btn:hover path {
+    fill: #3056D3;
+}
+
+.header__btn svg {
+    transition: all 0.3s ease-in-out;
+}
+
+.header__btn:hover svg {
+    transform: rotate(90deg);
+}
+
+.header__btn:focus {
+    background-color: #a3acc4;
+}
+
+.header__btn:active {
+    background-color: #809ded;
+}
+
+.header__btn-link {
+    padding: 9px 20px;
+    line-height: 1.5;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__btn-link > span {
+    margin-right: 13px;
+}
+
+.sub-menu {
+    background-color: #fff;
+    padding: 22px;
+    color: #637381;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sub-menu--display {
+    width: 180px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+    z-index: 10;
+	transition: all 0.3s ease-in-out;
+}
+
+.sub-menu__list-item:not(:last-child){
+    margin-bottom: 13px;
+}
+
+.sub-menu__list-item {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-menu__list-item:hover {
+    color: #3056D3;
+}
+
+.sub-menu__list-item:focus {
+    outline: 1px solid #1b358c;;
+    color: #1b358c;
+}
+
+.sub-menu__list-item:active {
+    color: #364061;
+}
+
+.sub-sub-menu__content {
+    width: 668px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+	left: 100%;
+    z-index: 10;
+    padding: 30px;
+    opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+    background-color: #fff;
+}
+
+.sub-sub-menu .sub-sub-menu__content {
+	transition: all 0.3s ease-in-out;
+}
+
+.sub-sub-menu:hover .sub-sub-menu__content {
+    opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
+.sub-sub-menu__link {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.sub-sub-menu__item {
+    padding: 0;
+}
+
+.sub-sub-menu__item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.sub-sub-menu__img {
+    position: relative;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-sub-menu__img::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #CD835A;
+    opacity: 65%;
+}
+
+.sub-sub-menu__img-content {
+    position: relative;
+    padding: 65px 46px;
+    z-index: 10;
+}
+
+.sub-sub-menu__img-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.sub-sub-menu__img-text {
+    margin-bottom: 21px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sub-sub-menu__img-btn {
+    padding: 6px 14px;
+    background-color: #3056D3;
+    font-weight: 600;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-sub-menu__img-btn:hover {
+    background-color: #1b358c;
+    transform: translateY(2px);
+}
+
+.sub-sub-menu__img-btn:focus {
+    outline: 1px solid #fff;
+}
+
+.sub-sub-menu__img-btn:active {
+    background-color: #041859;
+}
+
+.sub-menu__title {
+    color: #212B36;
+    margin-bottom: 20px;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.header__nav-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.header__nav-item:hover {
+    color: #3056D3;
+}
+
+.header__nav-item:hover path {
+    fill: #3056D3;
+}
+
+.header__nav-item svg {
+    transition: all 0.3s ease-in-out;
+}
+
+.header__nav-item:hover svg {
+    transform: rotate(90deg);
+}
+
+.header__nav-item:focus {
+    outline: 1px solid #1b358c;;
+}
+
+.header__nav-item:active {
+    color: #364061;
+}
+
+.header__nav-item-link {
+    align-items: center;
+}
+
+.header__nav-item-link > span {
+    margin-right: 7px;
+}
+
+.header__link {
+    margin-left: auto;
+}
+
+.header__link-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.header__link-item {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__link-item path {
+    transition: all 0.3s ease-in-out;
+}
+
+.header__link-item:hover path {
+    fill: #3056D3;
+}
+
+.header__link-item:focus {
+    outline: 1px solid #637381;
+    outline-offset: 2px;
+}
+
+.header__link-item:active path {
+    transform: scale(0.9);
+}
+
+.header__link-item-number{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+}
+
+.page {
+    background-image: url(../img/backgroung.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.page__container {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1300px;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.footer {
+    background-color: #acb0bd;
+    position: relative;
+}
+
+.footer__container {
+    margin: 0 auto;
+    padding: 300px 15px;
+    max-width: 600px;
+    font-size: 28px;
+    line-height: 1.75;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer__link {
+    position: relative;
+    border: 2px solid #222;
+    padding: 15px;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+    background-color: #637381;
+}
+
+.footer__link:focus {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.footer__link:active {
+    background-color: #a3acc4;
+}
+
+.footer__img {
+    position: absolute;
+    width: 500px;
+    top: 10%;
+    left: 35%;
+    z-index: 0;
+}
+
+
+
