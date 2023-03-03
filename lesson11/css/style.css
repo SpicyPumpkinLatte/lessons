@@ -325,10 +325,10 @@ body {
 
 .footer {
     background-color: #acb0bd;
-    position: relative;
 }
 
 .footer__container {
+    position: relative;
     margin: 0 auto;
     padding: 300px 15px;
     max-width: 600px;
@@ -364,7 +364,7 @@ body {
     position: absolute;
     width: 500px;
     top: 10%;
-    left: 35%;
+    left: 8%;
     z-index: 0;
 }
 
