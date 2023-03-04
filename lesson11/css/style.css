@@ -141,12 +141,16 @@ body {
     color: #364061;
 }
 
+.sub-sub-menu__link {
+    padding-right: 150px;
+}
+
 .sub-sub-menu__content {
     width: 700px;
     border-radius: 5px;
     position: absolute;
-    top: -10px;
-	left: 100%;
+    top: -25px;
+	left: 120%;
     z-index: 10;
     padding: 30px;
     opacity: 0;
