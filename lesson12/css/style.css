@@ -1,0 +1,436 @@
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.2;  
+}
+
+.header {
+    background-image: url(../img/bg.jpg);
+    background-repeat: repeat;
+}
+
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px 15px;
+    max-width: 1470px;
+}
+
+.header__block-wrapper {
+    width: 250px;
+    height: 250px;
+    background-color: darkgrey;}
+
+.header__block-wrapper:not(:nth-child(n+16)) {
+    margin-bottom: 30px;
+}
+
+.header__block {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    background: linear-gradient(218deg, rgba(94,83,83,1) 0%, rgba(89,97,107,1) 39%, rgba(0,0,0,1) 100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.block1:hover {
+    transform: translate(10px, -10px);
+}
+
+.block2:hover {
+    transform: translateX(-15px);
+}
+
+.block3:hover {
+    transform: translateY(10px);
+}
+
+.block4:hover {
+    transform: scale(0.5);
+}
+
+.block5:hover {
+    transform: scaleX(1.3);
+}
+
+.block6:hover {
+    transform: scaleY(0.7);
+}
+
+.block7:hover {
+    transform: rotate(180deg);
+}
+
+.block8:hover {
+    transform: skew(15deg, 5deg);
+}
+
+.block9:hover {
+    transform: skewX(-10deg);
+}
+
+.block10:hover {
+    transform: skewY(10deg);
+}
+
+.block11:hover {
+    transform: matrix(0.5, 0.2, -1, 0.9, 0, 10);
+}
+
+.block12:hover {
+    transform: translate3d(-20px, -10px, 0px);
+}
+
+.block13:hover {
+    transform: rotate3d(0.5, 1, 1.5, 90deg)
+}
+
+.block14:hover {
+    transform: scale3d(0.8, 0.5, 2);
+}
+
+.block15:hover {
+    transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 20deg);
+}
+
+.block16 {
+    transform-origin: 0 0;
+}
+
+.block16:hover {
+    transform: scale(0.5);
+}
+
+.wrapper3d {
+    perspective-origin: center;
+    perspective: 500px;
+}
+
+.block17:hover {
+    transform: rotateX(120deg);
+}
+
+.wrapper3d2 {
+    perspective-origin: center;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    background-color: rgba(128, 133, 139, 0.8); 
+}
+
+.block18:hover {
+    transform: rotateX(-60deg);
+}
+
+.block19:hover {
+    transform: rotate(-40deg) scale(0.8);
+}
+
+.flip {
+    backface-visibility: visible;
+    perspective: 500px;
+}
+
+.flip__wrapper {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 250px;
+    transition: all 0.8s ease;
+}
+
+.block20, .block20__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.block20 {
+    z-index: 2;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+
+.block20__back {
+    transform: rotateY(-180deg);
+    background: url(../img/pngwing.com.png) center/contain no-repeat rgba(13, 21, 78, 0.8);
+    border: 2px solid black;
+}
+
+.flip:hover .flip__wrapper {
+    transform: rotateY(180deg);
+}
+
+.car {
+    background-color: darkgray;
+}
+
+.car__container {
+    margin: 0 auto;
+    padding: 100px 15px;
+    max-width: 1470px;
+}
+
+.car__top {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.car__top-body {
+    position: relative;
+    z-index: 4;
+    left: 275px;
+    width: 300px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(36,34,34,1) 0%, rgba(98,90,94,1) 28%, rgba(0,0,0,1) 100%);
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    transform: skewX(-20deg);
+}
+
+.car__top-window {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 90px;
+    border-radius:0% 100% 100% 0% / 100% 50% 50% 0%;
+    background-color: black;
+}
+
+.car__top-window-frame {
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius:0% 100% 100% 0% / 100% 50% 50% 0%;
+    background: linear-gradient(83deg, rgba(172,205,214,1) 0%, rgba(206,217,221,1) 13%, rgba(110,143,153,1) 100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.car__top-window-frame:hover {
+    background: linear-gradient(83deg, rgba(172,205,214,1) 0%, rgba(206,217,221,1) 90%, rgba(110,143,153,1) 100%);
+}
+
+.car__top-tail {
+    position: relative;
+}
+
+.car__top-tail1 {
+    position: relative;
+    left: 108px;
+    top: -0px;
+    width: 250px;
+	height: 200px;
+    border-radius:0% 100% 0% 100% / 100% 99% 1% 0%;
+    border-right: 3px solid black;
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(98,90,94,1) 55%, rgba(0,0,0,1) 100%);
+    z-index: 1;
+}
+
+.car__top-tail2 {
+    position: absolute;
+    top: -0px;
+    left: 108px;
+    border-radius:0% 100% 0% 100% / 100% 99% 1% 0%;
+    background-color: darkgray; 
+    width: 80px;
+    height: 120px;
+    z-index: 2;
+}
+
+.car__body {
+    display: flex;
+    align-items: end;
+}
+
+.car__body-front {
+    position: relative;
+    z-index: 1;
+    left: 200px;
+    top: 0;
+    width: 400px;
+    height: 250px;
+    border-radius: 100% 0% 32% 68% / 50% 100% 0% 50%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(75,64,70,1) 58%, rgba(0,0,0,1) 100%);
+    border-bottom: 20px solid #292b2d;
+    transform: skewX(-40deg);
+}
+
+.headlight {
+    position: relative;
+    width: 60px;
+    height: 40px;
+    border: 3px solid black;
+    background-color: #c1a127;
+    box-shadow: 23px 1px 25px 17px rgba(193, 161, 39, 0.49);
+    transition: all 0.4s ease-in-out;
+}
+
+.headlight:hover {
+    background-color: #c12727;
+    box-shadow: 23px 1px 25px 17px rgba(193, 39, 39, 0.49);
+}
+
+.car__body-front-headlight {
+    top: 140px;
+    left: 30px;
+    border-radius: 100% 0% 32% 68% / 50% 100% 0% 50%; 
+}
+
+.car__body-middle {
+    position: relative;
+    z-index: 1;
+    left: 90px;
+    width: 800px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(75,64,70,1) 66%, rgba(0,0,0,1) 100%);
+    border-bottom: 20px solid #292b2d;
+    transform: skewX(-20deg);  
+}
+
+.car__body-middle::before {
+    content: "";
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    background-color: black;
+}
+
+.car__body-front-door {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    width: 360px;
+    height: 280px;  
+}
+
+.car__body-front-door-open {
+    margin-left: auto;
+    position: relative;
+    top: 50%;
+    right: 5%;
+    width: 100px;
+    height: 50px;
+    background: url(../img/batman.png) center/contain no-repeat;
+    transition: all 0.4s ease-in-out;
+}
+
+.car__body-front-door-open:hover {
+    transform: rotate(-20deg);
+}
+
+.car__body-back {
+    position: relative;
+    z-index: 1;
+    right: 80px;
+    top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 0% 100% 10% 90% / 88% 86% 14% 12%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(75,64,70,1) 58%, rgba(0,0,0,1) 100%);
+    border-right: 3px solid black;
+    border-bottom: 20px solid #292b2d;
+}
+
+.car__body-back-headlight {
+    border-radius: 0% 100% 10% 90% / 88% 86% 14% 12%;
+    top: 220px;
+    left: 200px;
+}
+
+.car__tail {
+    position: absolute;
+    left: 135%;
+    top: 20px;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.car__tail:hover {
+    transform: scale(1.3);
+}
+
+.car__tail-top {
+    position: absolute;
+    top: -60px;
+    left: 120px;
+    width: 70px;
+    height: 350px;
+    border-radius: 60%;
+    background-color: black;
+    transform: rotate(130deg);
+}
+
+.car__tail-main {
+    position: relative;
+    width: 0;
+	height: 0;
+	border-width: 97.5px 300px 250px 0;
+	border-color: transparent black transparent transparent;
+	border-style: solid;
+    transform: rotate(120deg);
+    z-index: -1;
+}
+
+.car__tail-round {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: darkgray; 
+    border-radius: 100%;
+}
+
+.round1 {
+    right: 15px;
+    bottom: 70px;
+}
+
+.round2 {
+    left: 85px;
+    bottom: 15px;
+}
+
+.round3 {
+    left: 85px;
+    bottom: 15px;
+}
+
+.car__wheel {
+    position: relative;
+    display: inline-block;
+    top: -120px;
+    left: 400px;
+    width: 200px;
+    height: 200px;
+    background: url(../img/wheel.png) center/contain no-repeat;
+    z-index: 6;
+    transition: all 1s ease-in-out;
+}
+
+.car__wheel:hover {
+    transform: scale(1.1) rotate(-360deg);
+}
+
+.car__wheel-left {   
+    margin-right: 450px;
+}
