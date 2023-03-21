@@ -63,7 +63,7 @@ body {
 }
 
 .header__image > img:hover  {
-    opacity: 0.8;
+    box-shadow: 4px 4px 12px 6px rgba(51, 51, 51, 0.25);
 }
 
 .portfolio__top {
@@ -144,7 +144,7 @@ body {
 }
 
 .portfolio__list-item > img:hover  {
-    opacity: 0.8;
+    box-shadow: 4px 4px 12px 6px rgba(51, 51, 51, 0.25);
 }
 
 .portfolio-item__link {
@@ -215,7 +215,7 @@ body {
 }
 
 .services__list-item-content--image > img:hover  {
-    opacity: 0.8;
+    box-shadow: 4px 4px 12px 6px rgba(51, 51, 51, 0.25);
 }
 
 .services__list-item-content--descr {
@@ -227,6 +227,11 @@ body {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.services__list-item-title:hover {
+    transform: scale(1.03);
 }
 
 .services__list-item-text {
