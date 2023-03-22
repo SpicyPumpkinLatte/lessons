@@ -198,12 +198,11 @@ body {
 .services__list-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 -60px;
+    margin: 0 -5%;
 }
 
 .list__item-content {
-    padding: 0 60px;
+    padding: 0 5%;
 }
 
 .services__list-item-content--image {
