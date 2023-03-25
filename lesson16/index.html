@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 16</title>
+  <link rel="icon" href="#">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="checkout">
+      <div class="checkout__container container">
+        <div class="checkout__top">
+          <h1 class="checkout__top-title">Checkout</h1>
+          <div class="checkout__top-text">
+            <p>There are 3 products in your cart</p>
+          </div>
+        </div>
+        <div class="checkout__form">
+          <h2 class="checkout__form-title form-title">Billing Details</h2>
+          <form action="#" class="checkout__form-content">
+            <input class="checkout__form-input" name="name" required type="text" placeholder="First name*">
+            <input class="checkout__form-input" name="last-name" required type="text" placeholder="Last name*">
+            <input class="checkout__form-input" name="adress" required type="text" placeholder="Address*">
+            <input class="checkout__form-input" name="adress-line" type="text" placeholder="Address line 2">
+            <select name="country" id="country" class="checkout__form-input form-select" required>
+              <option value="" class="form-select__option form-select__option--selected" selected disabled>Country*
+              </option>
+              <option value="Ukraine" class="form-select__option">Ukraine</option>
+              <option value="England" class="form-select__option">England</option>
+              <option value="USA" class="form-select__option">USA</option>
+              <option value="Germany" class="form-select__option">Germany</option>
+              <option value="Spain" class="form-select__option">Spain</option>
+              <option value="Poland" class="form-select__option">Poland</option>
+            </select>
+            <input class="checkout__form-input" name="city" required type="text" placeholder="City/Town*">
+            <input class="checkout__form-input" name="postcode" required type="text" placeholder="Postcode / ZIP*">
+            <input class="checkout__form-input" name="phone" required type="tel" placeholder="Phone*">
+            <input class="checkout__form-input" name="postcode" required type="text" placeholder="Postcode / ZIP*">
+            <input class="checkout__form-input" name="phone" required type="tel" placeholder="Phone*">
+            <textarea class="checkout__form-textarea" name="comment" id="comment"
+              placeholder="Additional information"></textarea>
+            <div class="checkout__form-checkbox">
+              <div class="checkout__form-checkbox-item">
+                <label for="check-01" class="checkout__form-checkbox-label">Create Account</label>
+                <input id="check-01" class="checkout__form-checkbox-input" name="account" type="checkbox">
+              </div>
+              <div class="checkout__form-checkbox-item">
+                <label for="check-02" class="checkout__form-checkbox-label">Ship to a different address?</label>
+                <input id="check-02" class="checkout__form-checkbox-input" name="different-address" type="checkbox">
+              </div>
+            </div>
+            <div class="checkout__form-discount">
+              <label class="checkout__form-discount-label" for="discount">Apply Coupon to get discount!</label>
+              <input id="discount" class="checkout__form-input checkout__form-input--discount" type="text"
+                placeholder="Coupon code">
+              <button class="checkout__form-input-btn">
+                <span>Apply Code</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="checkout__payment">
+          <form class="checkout__payment-form" action="#">
+            <div class="checkout__payment-form-content">
+              <div class="checkout__payment-form-top">
+                <h2 class="checkout__payment-title form-title">Payment</h2>
+              </div>
+              <div class="checkout__payment-form-container">
+                <div class="checkout__payment-form-list">
+                  <div class="checkout__payment-form-list-item">
+                    <input id="payment1" class="checkout__payment-radio" type="radio" name="payment" value="bank-transfer" checked>
+                    <label class="checkout__payment-form-label" for="payment1"> 
+                      Direct Bank Transfer
+                    </label>
+                  </div>
+                  <div class="checkout__payment-form-list-item">
+                    <input id="payment2" class="checkout__payment-radio" type="radio" name="payment" value="cash-on-delivery"> 
+                    <label class="checkout__payment-form-label" for="payment2">                     
+                      Cash on delivery
+                    </label>
+                  </div>
+                  <div class="checkout__payment-form-list-item">
+                    <input id="payment3" class="checkout__payment-radio" type="radio" name="payment" value="online">
+                    <label class="checkout__payment-form-label" for="payment3">                     
+                      Online Getway
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout__payment-list">
+                  <div class="checkout__payment-list-item">
+                    <a target="_blank" href="https://www.paypal.com"><img src="./img/paypal.svg" alt="PayPal"></a>
+                  </div>
+                  <div class="checkout__payment-list-item">
+                    <a target="_blank" href="https://www.visa.com.ua"><img src="./img/visa.svg" alt="Visa"></a>
+                  </div>
+                  <div class="checkout__payment-list-item">
+                    <a target="_blank" href="https://www.mastercard.ua"><img src="./img/master-card.svg"
+                        alt="Master Card"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__payment-bottom">
+              <button class="checkout__payment-btn">
+                <span>Place an Order</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="shipping">
+      <div class="shipping__container container">
+        <h2 class="shipping__title">Shipping Address</h2>
+        <form action="#" class="shipping__login">
+          <div class="shipping__login-form shipping-form">
+            <div class="shipping-form__item">
+              <label for="shipping_email" class="shipping-form__title">Email Address <span
+                class="shipping-form__title-red">*</span></label>
+            <input id="shipping_email" name="shipping_email" type="email" class="shipping-form__input"
+              placeholder="roni_cost@example.com">
+            </div>
+                <div class="shipping-form__item">
+                  <label for="password" class="shipping-form__title">Password</label>
+              <input id="password" name="shipping_password" type="password" class="shipping-form__input">
+                </div>           
+              <div class="shipping-form__item">
+                <label for="zip" class="shipping-form__title">Zip/Postal Code</label>
+                  <input id="zip" name="shipping__zip" type="text" class="shipping-form__input">
+                  <div class="shipping-form__item-text">
+                    <p>You already have an account with us. Sign in or continue as guest.</p>
+                  </div>                
+              </div>         
+          </div>
+          <button type="submit" class="shipping__form-button shipping__button--login">
+            <span>LOGIN</span>
+          </button>
+          <a href="#" class="shipping__login-link">Forgot Your Password?</a>
+        </form>
+        <form action="#" class="shipping__address">
+          <div class="shipping__address-form shipping-form">
+            <div class="shipping-form__item">  
+              <label for="shipping_name" class="shipping-form__title">First Name <span
+              class="shipping-form__title-red">*</span></label>
+          <input id="shipping_name" name="shipping_name" type="email" class="shipping-form__input" required>
+        </div>
+              <div class="shipping-form__item">
+                <label for="shipping_last-name" class="shipping-form__title">Last Name <span
+                  class="shipping-form__title-red">*</span></label>
+              <input id="shipping_last-name" name="shipping_last-name" type="password" class="shipping-form__input"
+                required>
+              </div>
+              <div class="shipping-form__item">
+                <label for="company" class="shipping-form__title">Company</label>
+                  <input id="company" name="shipping__company" type="text" class="shipping-form__input">
+              </div>
+              <div class="shipping-form__item shipping-form__item--address">
+                <label for="street-address" class="shipping-form__title shipping-form__title--address">Street Address <span class="shipping-form__title-red">*</span></label>
+                  <div class="shipping-form__input-group">
+                    <input id="street-address" name="shipping__street-address" type="text"
+                    class="shipping-form__input" required>
+                  <input name="shipping__street-address" type="text"
+                    class="shipping-form__input">
+                  <input name="shipping__street-address" type="text"
+                    class="shipping-form__input">
+                  </div>
+              </div>
+            <div class="shipping-form__item">
+              <label for="shipping-country" class="shipping-form__title">Country <span
+                class="shipping-form__title-red">*</span></label>
+            <input id="shipping-country" name="shipping__country" type="text" class="shipping-form__input"
+              required>
+            </div>
+                <div class="shipping-form__item"> 
+                  <label for="zip" class="shipping-form__title"> State/Province <span
+                  class="shipping-form__title-red">*</span></label>
+              <select class="shipping-form__input" name="state/province" id="state" required>
+                <option value="" class="form-select__option form-select__option--selected" selected disabled>Please
+                  select a region, state or province</option>
+                <option value="Ukraine" class="form-select__option">Ukraine</option>
+                <option value="England" class="form-select__option">England</option>
+                <option value="USA" class="form-select__option">USA</option>
+                <option value="Germany" class="form-select__option">Germany</option>
+                <option value="Spain" class="form-select__option">Spain</option>
+                <option value="Poland" class="form-select__option">Poland</option>
+              </select>
+            </div>
+           
+          </div>
+          <h2 class="shipping__form-title shipping__title">Shipping Methods</h2>
+          <div class="shipping__form-group">
+            <div class="shipping__form-group-radio">
+              <div class="shipping__form-group-item">
+                <input id="price-01" name="price" value="5$" class="shipping__form-radio" type="radio">
+              <label class="shipping__form-radio-label" for="price-01">$5.00</label>
+              </div>
+              <span class="shipping__form-descr">Fixed</span>
+              <span class="shipping__form-descr">Flat Rate</span>
+            </div>
+            <div class="shipping__form-group-radio">
+              <div class="shipping__form-group-item">
+                <input id="price-02" name="price" value="10$" class="shipping__form-radio" type="radio">
+              <label class="shipping__form-radio-label" for="price-02">$10.00</label>
+              </div>
+              <span class="shipping__form-descr">Table Rate</span>
+              <span class="shipping__form-descr">Best Way</span>
+            </div>
+          </div>
+          <div class="shipping__btns">
+              <a class="shipping__form-button" href="#">NEXT</a>
+            <a class="shipping__back" href="#">Back</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
