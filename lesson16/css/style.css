@@ -122,7 +122,7 @@
     margin-bottom: 25px;
 }
 
-.checkout__form-checkbox-item *:last-child {
+.checkout__form-checkbox *:last-child {
     margin-bottom: 0;
 }
 
