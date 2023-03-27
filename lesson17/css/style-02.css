@@ -90,8 +90,7 @@
     padding: 25px;
     flex: 0 1 100%;
     min-width: 175px;
-    resize: vertical;
-    height: 180px !important;
+    height: 180px;
 }
 
 .checkout__form-input:hover, .checkout__form-textarea:hover, .form-select:hover {
@@ -558,7 +557,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.shipping__form-radio-label:hover {
+.shipping__form-radio-label:hover, .shipping__form-descr:hover {
     color: #000;
 }
 
@@ -574,6 +573,8 @@
 
 .shipping__form-descr {
     flex-basis: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .shipping__btns {
