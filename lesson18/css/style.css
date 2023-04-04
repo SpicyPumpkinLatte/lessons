@@ -26,6 +26,12 @@
     padding-top: 37.5px;
     padding-bottom: 37.5px;
     color: rgba(73, 80, 87, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #f8f9faf7;
 }
 
 .header__container {
@@ -39,10 +45,10 @@
     gap: 25px;
 }
 
-
 .page {
     position: relative;
     margin-bottom: 102px;
+    padding-top: 100px;
 }
 
 .page__top {
@@ -693,6 +699,10 @@
         margin-bottom: 20px;
     }
 
+    .page {
+        padding-top: 60px;
+    }
+
     .page, 
     .page__top {
     margin-bottom: 30px;
@@ -740,11 +750,13 @@
 }
 
 @media (max-width: 605px) {
+    .page {
+        padding-top: 103px;
+    }
 
     .hero__content-autor {
         margin-bottom: 8px;
     }
-
 
     .minimal {
         margin-bottom: 10px;
@@ -821,6 +833,10 @@
         flex-wrap: wrap;
     }
 
+    .page {
+        padding-top: 120px;
+    }
+
     .minimal {
         margin-bottom: 14px;
     }
@@ -864,6 +880,9 @@
 
     .header__container {
         gap: 7px;
+    }
+    .page {
+        padding-top: 76px;
     }
 
     .page, 
